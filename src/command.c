@@ -4119,11 +4119,7 @@ int DoFormatParm (char *parmName, char *tkn)
                         else if (!strcmp(tempStr, "Standard"))
                             dataType = STANDARD;
                         else if (!strcmp(tempStr, "Continuous"))
-                            {
-                            MrBayesPrint ("%s   MrBayes currently does not support the use of the 'Continuous' datatype\n", spacer);
-                            return ERROR;
-                            /* dataType = CONTINUOUS; */
-                            }
+                            dataType = CONTINUOUS;
                         else if (!strcmp(tempStr, "Mixed"))
                             {
                             dataType = MIXED;
@@ -4153,11 +4149,7 @@ int DoFormatParm (char *parmName, char *tkn)
                         else if (!strcmp(tempStr, "Standard"))
                             dataType = STANDARD;
                         else if (!strcmp(tempStr, "Continuous"))
-                            {
-                            MrBayesPrint ("%s   MrBayes currently does not support the use of the 'Continuous' datatype\n", spacer);
-                            return ERROR;
-                            /* dataType = CONTINUOUS; */
-                            }
+                            dataType = CONTINUOUS;
                         else if (!strcmp(tempStr, "Mixed"))
                             {
                             MrBayesPrint ("%s   Cannot have mixed datatype within a mixed datatype\n", spacer);
